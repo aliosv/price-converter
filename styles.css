@@ -1,0 +1,107 @@
+.price-converter
+{
+    display: inline-block;
+}
+
+.price-converter__value
+{
+    display: inline-block;
+}
+
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.dropdown__switcher
+{
+    border-bottom: 1px dashed #000;
+    cursor: pointer;
+}
+
+.dropdown__content-wrapper
+{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 10;
+    visibility: hidden;
+    margin: 27px 0 0;
+    height: 0;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.dropdown__content-wrapper_visibility_visible
+{
+    visibility: visible;
+    margin-top: 12px;
+    height: auto;
+    opacity: 1;
+}
+
+.dropdown__content:before,
+.dropdown__content:after
+{
+    position: absolute;
+    left: 50%;
+    content: '';
+}
+
+.dropdown__content:before
+{
+    top: -9px;
+    margin-left: -8px;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid rgba(0, 0, 0, .2);
+    border-left: 8px solid transparent;
+}
+
+.dropdown__content:after
+{
+    top: -8px;
+    margin-left: -7px;
+    border-right: 7px solid transparent;
+    border-bottom: 9px solid #fff;
+    border-left: 7px solid transparent;
+}
+
+.dropdown__content
+{
+    position: relative;
+    left: -50%;
+    padding: 11px 0;
+    border-radius: 6px;
+    background: #fff;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .2), inset 0 0 0 1px rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2), inset 0 0 0 1px rgba(0, 0, 0, .2);
+}
+
+.dropdown__item
+{
+    position: relative;
+    z-index: 1;
+    padding: 0 15px;
+    color: #4a5760;
+    font: bold 13px/30px Helvetica, 'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
+    cursor: pointer;
+}
+
+.dropdown__item:hover
+{
+    background: #22a4c7;
+    background: -webkit-linear-gradient(top, rgba(41,182,210,1) 0%,rgba(27,147,188,1) 100%);
+    background:    -moz-linear-gradient(top, rgba(41,182,210,1) 0%, rgba(27,147,188,1) 100%);
+    background:         linear-gradient(to bottom, rgba(41,182,210,1) 0%,rgba(27,147,188,1) 100%);
+    -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .1);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
+}

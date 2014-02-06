@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Переключение валюты</title>
+    <meta name="description" content="Проверка переключения валюты">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="price-converter">
+        <div class="price-converter__value" data-price="100"></div>
+        <div class="dropdown price-converter__toggle">
+            <div class="dropdown__switcher price-converter__currency"></div>
+            <div class="dropdown__content-wrapper">
+                <div class="dropdown__content">
+                    <div class="dropdown__item">USD</div>
+                    <div class="dropdown__item">RUB</div>
+                    <div class="dropdown__item">UAH</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://yandex.st/jquery/2.1.0/jquery.min.js"></script>
+    <script src="dropdown.js"></script>
+    <script src="price-converter.js"></script>
+</body>
+</html>
